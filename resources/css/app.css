@@ -1,0 +1,60 @@
+:root{
+	--color-theme:#e7461dd4;
+}
+
+.home-color{background-color:var(--color-theme) !important;}
+/*Actual menu that includes the options such as loggin in, etc found in the top page background-color:#efbb1a;*/
+.menu-items{background-image:linear-gradient(75deg, #b3b6b7, #d7dbdd 33%,  #b2babb 66%, #85929e 40%, #cbc91a);
+                    background-image:-moz-linear-gradient(75deg, #b3b6b7, #d7dbdd 33%,  #b2babb 66%, #85929e 40%, #cbc91a);    
+					background-image:-webkit-linear-gradient(75deg, #b3b6b7, #d7dbdd 33%,  #b2babb 66%, #85929e 40%, #cbc91a);} 
+
+
+
+/*This is to style inside the message box */
+.chat-box{height: -moz-calc(100% - 35px); height: -webkit-calc(100% - 35px); height: calc(100% - 35px); word-break:break-all; overflow:scroll; padding: 10px;  -moz-box-sizing:border-box; -webkit-box-sizing:border-box; box-sizing:border-box; background-color:#EFFFEC; }
+			 
+
+.overflown-chat-box{padding: 10px; -moz-box-sizing:border-box; overflow:scroll; -webkit-box-sizing:border-box; box-sizing:border-box; background-color:#EFFFEC;  height:400px; word-break:break-all;  }
+			 
+
+.bread-crumb-div{background-color:gray; border-radius:8px; height:5px; width:18px; position:relative;  z-index:40px; }
+
+
+.top-row{margin-top:120px;}
+
+a.disabled-link{pointer-events:none;cursor:default;}
+
+
+
+
+/* left: 50%; top: 50%; height:60px; width:60px; margin:0px auto; position: relative; z-index:1000; */
+
+
+.dual-ring-rotate{display:inline-block; left: 50%; top: 50%; width:64px; height:64px; margin:0px auto; position: relative;}
+.dual-ring-rotate:after{content:" "; display:block; width:46px; height:46px; margin:1px; border-radius:50%; border:5px solid black; border-color:black transparent black transparent; animation:dual-ring-rotate 1.2s linear infinite}
+
+@keyframes dual-ring-rotate{0%{transform:rotate(0deg);}
+100%{transform:rotate(360deg);}}
+
+lazy-load {
+	background: #F1F1FA;
+	width: 400px;
+	height: 300px;
+	display: block;
+	margin: 10px auto;
+	border: 0;
+  }
+
+.borderless-input {
+	border-top-style: none;
+	border-left-style: none;
+	border-right-style: none;
+    border-bottom-style: dotted;
+    
+	outline: none;
+}
+
+.borderless-input:focus {
+	box-shadow:5px 5px;
+	z-index:1000;
+}

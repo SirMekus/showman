@@ -1,0 +1,1 @@
+<script src="{{route('home')}}{{mix('/js/app.js') }}"></script>
